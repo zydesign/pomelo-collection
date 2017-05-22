@@ -1,7 +1,6 @@
 # pomelo-collection
-Pomelo-collection is the module for basic data structure in Node.JS. The prefix 'pomelo' means the module is build for the open source game server framework [pomelo](http://pomelo.netease.com/). 
-
-Current the implemention data struction is priorityQueue and queue, more data structure will be added as need.
+pomelo - collection是node . js中基本数据结构的模块。
+该模块提供priorityQueue和queue两种方法，优先队列和排序
 ##Installation
 ```
 npm install pomelo-collection
