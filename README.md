@@ -15,9 +15,9 @@ npm install pomelo-collection
 	//Use priorityQueue
 	var PriorityQueue = coll.priorityQueue;
 	
-	//a先加入，b后加入，如果后加入的b比较小，放首位。
+	//a先加入，b后加入，这里是从大到小排列
 	//var comparator = function(a, b){
-		return a > b;   //这里从小到大排列
+		return a > b;   
 	}
 	
 	//build a priority queue with custom comparator
