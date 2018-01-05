@@ -15,8 +15,9 @@ npm install pomelo-collection
 	//Use priorityQueue
 	var PriorityQueue = coll.priorityQueue;
 	
+	//a先加入，b后加入，如果后加入的b比较小，放首位。
 	//var comparator = function(a, b){
-		return a > b;
+		return a > b;   //这里从小到大排列
 	}
 	
 	//build a priority queue with custom comparator
@@ -28,9 +29,11 @@ npm install pomelo-collection
 	pq.offer(3);
 	
 	//Peek will get the element but not remove it, in this case, it will print 3 on the console.
+	//peek（）函数会从队列中引用首位对象，但不从队列中删除？
 	console.log(pq.peek());
 	
 	//pq will get and remove the top element in priorityQueue. In this case, it will print 3, 2, 1.
+	//pop（）函数将会从队列中分离提取首位对象，该对象会被队列删除？
 	while(pq.size()>0){
 		console.log(pq.pop());
 	}
